@@ -1,0 +1,7 @@
+https://letmaik.github.io/pyvirtualcam/
+
+Future work:
+
+https://github.com/letmaik/pyvirtualcam/blob/master/examples/video.py
+
+https://www.dynamsoft.com/codepool/virtual-camera-static-images-video.html

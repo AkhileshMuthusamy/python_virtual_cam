@@ -7,7 +7,7 @@ def main(path):
     height = container.streams[0].codec_context.coded_height
     width = container.streams[0].codec_context.coded_width
 
-    cam = pyvirtualcam.Camera(width=width, height=1080, fps=20)
+    cam = pyvirtualcam.Camera(width=width, height=height, fps=20)
 
     while True:
         container = av.open(path) # reopened the file to loop the video
