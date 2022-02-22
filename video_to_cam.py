@@ -2,10 +2,21 @@ import av
 import pyvirtualcam
 import sys
 
+supported_heights = [360, 720, 1080]
+
 def main(path):
     container = av.open(path)
-    height = container.streams[0].codec_context.coded_height
+    height = container.streams[0].codec_context.coded_height 
     width = container.streams[0].codec_context.coded_width
+    print(f'Height: {height}')
+    
+    if height not in supported_heights:
+        trimmed_height = 0
+        for i in range(len(supported_heights)):
+            if height > supported_heights[i]:
+                trimmed_height = supported_heights[i]
+        
+        height = trimmed_height
 
     cam = pyvirtualcam.Camera(width=width, height=height, fps=20)
 
