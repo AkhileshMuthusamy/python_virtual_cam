@@ -1,3 +1,7 @@
 {
-    "python.pythonPath": "d:\\Software Development\\Python\\Workspace\\PyVirtualCamPlayer\\.venv\\Scripts\\python.exe"
+    "python.defaultInterpreterPath": "d:\\Software Development\\Python\\Workspace\\PyVirtualCamPlayer\\.venv\\Scripts\\python.exe",
+    "cSpell.words": [
+        "aiortc",
+        "fliplr"
+    ]
 }
